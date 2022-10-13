@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int i,j,k;
+int h,b;
+
+void main(){
+	char c1[]={"flecha derecha = hacia derecha"};
+	char c2[]={"flecha izquierda = hacia izquierda"};
+	char hy[]={"Presione espacio para comenzar el juego"};
+	char ti[]={"Juego de Carro!"};
+}
+
+void square(){
+	h=25;
+	b=90;
+	for(i=0;i<=h;i++){
+		for(j=0;j<=b;j++){
+			if((i==0 && j==0)||(i==0 && j==b)||(i==h && j==0)||(i==h && j==b))
+				printf("+");
+			else if(i==0||i==h)
+				printf("-");
+			else if(j==0||j==b)
+				printf("|");
+			else 
+				printf(" ");
+				
+			
+		}
+		printf("\n");
+	}
+	return;
+}
